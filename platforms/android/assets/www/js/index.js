@@ -33,7 +33,11 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
+        
+		app.receivedEvent('deviceready');
+		Parse.initialize("V0YRvZJtJcnTZ8Tha2Nf7TEfRs1r4qp3NVJjCYZi", "hTYD8ilxV3wiM7oKO6JJ1kHzm239VDz4kK8oaEtW");
+		
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
