@@ -30,6 +30,14 @@ function signUpUser() {
 
 function signInUser() {
 
+
+ navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+
         	// TODO: Enter in your own API keys
 	        Parse.initialize("6fhBGovd4GFjgixpVQIl4PyTJKwJM7uHUP3XYLlj", "2NirEVI4f2LBQZiMnulp0fD7T5hOhXQg0Upw0CPD");
 
