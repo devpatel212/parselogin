@@ -38,43 +38,7 @@
 		
 		
 		
-		<script type="text/javascript" charset="utf-8">
-    //wait for device api libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // device apis are available
-    function onDeviceReady() {
-       // empty
-    }
-    function showAlert() {
-      navigator.notification.alert(
-       'Message box please display....', // message
-       altertDismissed,             // no callback
-       'Message Box Title',         // title
-       'Continue'                   // button texr
-    );
-    }
-    function  altertDismissed(){
-       navigator.notification.alert("alert box is dismissed");
-    }
- </script>
  
- 
-  <script type="text/javascript">
-		 
-		  var login = function () {
-
-
- navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-		}
-		 
-		  </script>
     </head>
     <body>
 	
@@ -97,23 +61,16 @@
             Password
 		   <br> 
            
-            <input type="button" id="signIn" onclick="Alert();" value="Sign In">
+            <input type="button" id="signIn" onclick="signInUser();" value="Sign In">
 			
-			     <div class="event listening button" onclick="login();">Login with Facebook</div>
-           
+			     
 		   
 		   
-		   <div role="main" class="ui-content">
-    <p><a href="#" data-inline="button" data-role="button" data-ajax="false" onclick="showAlert(); return false;">Show Alert</a></p>
-</div><!-- /content -->
+		   
+
 		</form>
 		
 
-		
-		
-            <input type="button" id="signIn" onclick="Alert();" value="Sign In">
-			
-			     <div class="event listening button" onclick="login();">Login with Facebook</div>
 		
 		
         <script type="text/javascript" src="cordova.js"></script>
