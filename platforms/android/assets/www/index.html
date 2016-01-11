@@ -63,6 +63,8 @@
            
             <input type="button" id="signIn" onclick="signInUser();" value="Sign In">
 			
+			<button id="btnClick">Click Me!!!</button>
+			
 			     
 		   
 		   
@@ -78,6 +80,23 @@
 		<script type="text/JavaScript" src="js/my_parse_app.js"></script> 
 		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 		
+		
+		
+		<script>
+window.onload = function()
+{
+    document.addEventListener("deviceready", init, false);
+}
+function init()
+{
+    var myButton = document.getElementById("btnClick");
+    myButton.addEventListener("click", clicked, false);
+}
+function clicked()
+{
+    alert("You clicked a button.");
+}
+</script>
 		
 		
     </body>

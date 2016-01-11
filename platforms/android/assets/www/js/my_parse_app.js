@@ -28,6 +28,21 @@ function signUpUser() {
 		});
 }
 
+
+
+
+function init()
+{
+    var myButton = document.getElementById("btnClick");
+    myButton.addEventListener("click", clicked, false);
+}
+function clicked()
+{
+    alert("You clicked a button.");
+}
+
+
+
 function signInUser() {
 
 
