@@ -59,6 +59,22 @@
        navigator.notification.alert("alert box is dismissed");
     }
  </script>
+ 
+ 
+  <script type="text/javascript">
+		 
+		  var login = function () {
+
+
+ navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+		}
+		 
+		  </script>
     </head>
     <body>
         <form class="login">
@@ -96,20 +112,7 @@
 		<script type="text/JavaScript" src="js/my_parse_app.js"></script> 
 		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 		
-		 <script type="text/javascript">
-		 
-		  var login = function () {
-
-
- navigator.notification.alert(
-            'You are the winner!',  // message
-            alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-		}
-		 
-		  </script>
+		
 		
     </body>
 </html>
