@@ -36,13 +36,28 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <form class="login">
+		     <input type="text" id="signup-username" placeholder="Username" required="yes"> <br>
+            Username
+		    <br> <input type="text" id="signup-email" placeholder="Your Email" required="yes"> <br>
+            Email
+		   <br> <input type="password" id="signup-password" placeholder="Password" required="yes"> <br>
+             Password
+		   <br> 
+            <a href="index.html" onclick="signUpUser()">Link</a>
+            <!--<input type="button" onclick="signUpUser();" value="Sign Up">-->
+		</form>
+		<form class="login">
+		    <br><input type="text" id="signin-username" placeholder="Username" required="yes"> <br>
+            Username
+		    <br> <input type="password" id="signin-password" placeholder="Password" required="yes"> <br>
+            Password
+		   <br> 
+           
+            <input type="button" id="signIn" onclick="signInUser();" value="Sign In">
+		</form>
+		
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
