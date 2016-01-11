@@ -35,6 +35,30 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
 			<script type="text/JavaScript" src="js/my_parse_app.js"></script> 
         <title>Hello World</title>
+		
+		
+		
+		<script type="text/javascript" charset="utf-8">
+    //wait for device api libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device apis are available
+    function onDeviceReady() {
+       // empty
+    }
+    function showAlert() {
+      navigator.notification.alert(
+       'Message box please display....', // message
+       altertDismissed,             // no callback
+       'Message Box Title',         // title
+       'Continue'                   // button texr
+    );
+    }
+    function  altertDismissed(){
+       navigator.notification.alert("alert box is dismissed");
+    }
+ </script>
     </head>
     <body>
         <form class="login">
@@ -58,14 +82,12 @@
             <input type="button" id="signIn" onclick="Alert();" value="Sign In">
 			
 			     <div class="event listening button" onclick="login();">Login with Facebook</div>
-            <div class="event listening button" onclick="showDialog();">Show Dialog with Facebook</div>
-            <div class="event listening button" onclick="apiTest();">Test API with Facebook</div>
-            <div class="event listening button" onclick="getAccessToken();">Get access token with Facebook</div>
-            <div class="event listening button" onclick="logPurchase();">Log Purchase Event</div>
-            <div class="event listening button" onclick="logEvent();">Log Regular Event</div>
-            <div class="event listening button" onclick="getStatus();">Get login status with Facebook</div>
-            <div class="event listening button" onclick="logout();">Logout with Facebook</div>
-        </div>
+           
+		   
+		   
+		   <div role="main" class="ui-content">
+    <p><a href="#" data-inline="button" data-role="button" data-ajax="false" onclick="showAlert(); return false;">Show Alert</a></p>
+</div><!-- /content -->
 		</form>
 		
 
